@@ -1,0 +1,133 @@
+:root {
+    --main_red_color: #be201f;
+    --main_red_bg: #be201f;
+}
+
+/* 메인섹션 시작 */
+.main_section {
+    position: relative;
+}
+
+/* 헤더시작 */
+header {
+    position: fixed;
+    width: 100%;
+}
+
+header > p {
+    background: var(--main_red_bg);
+    text-align: center;
+    color: #fff;
+    padding: 14px 0;
+    font-size: 14px;
+}
+
+.header_bottom,
+.header_menu,
+.header_icon {
+    display: flex;
+}
+
+.header_bottom {
+    justify-content: space-between;
+    padding: 32px 80px;
+    align-items: center;
+}
+
+.header_menu,
+.logo,
+.header_icon {
+    width: 500px;
+}
+
+.logo {
+    text-align: center;
+}
+
+.header_icon {
+    justify-content: flex-end;
+}
+
+.header_menu,
+.header_icon {
+    gap: 24px;
+}
+
+.header_menu > li {
+    font-size: 20px;
+    color: var(--main_red_color);
+    font-weight: 600;
+}
+/* 헤더끝 */
+
+.bg_area {
+    background: url(../image/main_section_bg.png);
+    height: 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 0 100px;
+}
+
+.main_text > h2 {
+    font-size: 48px;
+    line-height: 70px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.main_text > p {
+    font-size: 20px;
+    color: #fff;
+    margin-top: 24px;
+}
+
+/* 메인섹션끝 */
+
+/* 쉐이크리스트 시작 */
+
+.shack_list_section {
+    padding: 80px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.shack_list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.shack_list > li {
+    width: 555px;
+    color: var(--main_red_color);
+}
+
+.shack_list > li > img {
+    width: 100%;
+}
+
+.shack_name {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 16px 0;
+}
+
+.shack_price {
+    display: flex;
+    gap: 16px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.real_price {
+    color: #f7bfbf;
+    text-decoration: line-through;
+}
+
+.shack_discount {
+    border: 1px solid var(--main_red_bg);
+    border-radius: 24px;
+    margin-top: 16px;
+    padding: 8px;
+    display: inline-block;
+}
